@@ -1287,7 +1287,16 @@ img { max-width: 100%; display: block; }
   .ambassadors__heading--m { display: block; height: auto; width: 100%; max-width: 330px; }
   .ambassadors__carousel { gap: 15px; }
   .ambassadors__arrow { width: 11px; margin-top: 0; align-self: center; }
-  .ambassadors__track { height: 186px; padding-top: 0; gap: 15px; }
+  .ambassadors__track { height: 186px; padding-top: 0; gap: 15px; justify-content: flex-start; position: relative; }
+  .ambassadors__track::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 25px; height: 100%;
+    background: linear-gradient(to left, var(--red), rgba(217, 1, 38, 0));
+    pointer-events: none;
+  }
+  #amb-left { display: none; }
   .amb-card--side { width: 107px; }
   .amb-card--center { width: 171px; }
   .amb-card--side .amb-card__name { font-size: 9.5px; height: auto; }
