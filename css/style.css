@@ -137,8 +137,11 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Topbar ---------- */
 .topbar {
-  position: relative;
-  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -159,20 +162,20 @@ img { max-width: 100%; display: block; }
   padding: 10px 20px;
   height: 44px;
   position: relative;
-  overflow: hidden;
+  transition: transform .25s ease;
+  transform-origin: center;
 }
-.topbar__reg::before {
-  content: '';
-  position: absolute;
-  left: -4px;
-  top: -117px;
-  width: 276px;
-  height: 276px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(255,255,255,.35) 0%, rgba(255,255,255,0) 70%);
-  pointer-events: none;
+.topbar__reg:hover {
+  transform: scale(1.08);
 }
 .topbar__reg > * { position: relative; }
+.topbar__reg .arrow {
+  width: 9px;
+  height: 13px;
+  font-size: 0;
+  background: var(--white);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
 .topbar__badge {
   position: absolute;
   top: 6.528vw;
@@ -217,7 +220,6 @@ img { max-width: 100%; display: block; }
 .hero {
   position: relative;
   overflow: hidden;
-  margin-top: calc(-2 * 1.389vw - 44px);
 }
 .hero__stage {
   position: relative;
@@ -334,7 +336,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- About ---------- */
 .about {
-  padding: 1.146vw 13.889vw;
+  padding: 1.146vw 13.889vw 4.861vw;
   background: var(--black);
   color: var(--white);
   display: flex;
