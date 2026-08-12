@@ -331,6 +331,7 @@ img { max-width: 100%; display: block; }
 .ticker--white { background: var(--white); }
 .ticker--white .ticker__track span { color: var(--black); }
 .ticker--white .ticker__track span:nth-child(even) { background: var(--black); }
+.ticker--slow .ticker__track { animation-duration: 80s; }
 @keyframes ticker {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
