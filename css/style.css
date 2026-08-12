@@ -1206,17 +1206,18 @@ img { max-width: 100%; display: block; }
     width: 100%;
     height: 100%;
   }
-  .wheel--m__ring--4 { inset: 0.31% 0.32%; width: 99.37%; height: 99.37%; }
-  .wheel--m__ring--5 { inset: 1.68% 1.69%; width: 96.63%; height: 96.63%; }
-  .wheel--m__ring--1 { inset: 16.84%; width: 66.32%; height: 66.32%; }
-  .wheel--m__ring--2 { inset: 17.89%; width: 64.22%; height: 64.22%; }
+  .wheel--m__ring--4 { inset: 0%; width: 100%; height: 100%; }
+  .wheel--m__ring--3 { inset: 3.33%; width: 93.35%; height: 93.35%; }
+  .wheel--m__ring--5 { inset: 4.35%; width: 91.31%; height: 91.31%; }
+  .wheel--m__ring--1 { inset: 19.61%; width: 60.78%; height: 60.78%; }
+  .wheel--m__ring--2 { inset: 20.27%; width: 59.46%; height: 59.46%; }
   .wheel--m__ring { animation: wheel-spin-cw 22s linear infinite; }
-  .wheel--m__ring--4, .wheel--m__ring--2 { animation-name: wheel-spin-ccw; }
+  .wheel--m__ring--2, .wheel--m__ring--4 { animation-name: wheel-spin-ccw; }
   .wheel--m__glass {
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    width: 46%;
+    transform: translate(-50%, -50%) scaleX(-1);
+    width: 48%;
     filter: drop-shadow(0 8px 16px rgba(0,0,0,.5));
   }
 
@@ -1230,9 +1231,9 @@ img { max-width: 100%; display: block; }
   .perks__heading { position: absolute; left: 15px; top: 30px; width: 76%; max-width: 274px; }
   .perks__box {
     position: absolute;
-    left: 43px;
-    top: 82px;
-    width: 443px;
+    left: 49.64px;
+    top: 94.65px;
+    width: 410.857px;
     max-width: none;
   }
   .perks__item {
@@ -1246,6 +1247,7 @@ img { max-width: 100%; display: block; }
   .perks__item--3 { left: 192px; top: 451px; width: 153px; justify-content: flex-start; }
   .perks__item--4 { left: 15px; top: 545px; width: 211px; justify-content: flex-start; }
   .perks__marker { order: -1; }
+  .perks__marker--right { background-image: url('../assets/perks-marker-right.svg'); }
   .perks__item--1 .perks__text,
   .perks__item--4 .perks__text { align-items: flex-start; text-align: left; }
   .perks__item--2 .perks__text,
@@ -1287,7 +1289,8 @@ img { max-width: 100%; display: block; }
   .ambassadors__heading--m { display: block; height: auto; width: 100%; max-width: 330px; }
   .ambassadors__carousel { gap: 15px; }
   .ambassadors__arrow { width: 11px; margin-top: 0; align-self: center; }
-  .ambassadors__track { height: 186px; padding-top: 0; gap: 15px; justify-content: flex-start; position: relative; }
+  .ambassadors__track { height: 200px; padding-top: 0; gap: 15px; justify-content: flex-start; position: relative; }
+  .amb-card__sparkle { transform: translate(2px, -2px); }
   .ambassadors__track::after {
     content: '';
     position: absolute;
