@@ -738,6 +738,7 @@ img { max-width: 100%; display: block; }
   width: 100%;
 }
 .ambassadors__heading { height: 86px; width: auto; display: block; }
+.ambassadors__heading--m { display: none; }
 .ambassadors__note {
   font-family: var(--text);
   font-size: 10px;
@@ -1138,21 +1139,22 @@ img { max-width: 100%; display: block; }
     flex-direction: column;
     gap: 30px;
   }
-  .about__text { gap: 15px; max-width: none; width: 100%; }
-  .about__text p { font-size: 14px; }
+  .about__text { display: contents; }
+  .about__text p { font-size: 14px; order: 1; }
   .about__text p:first-child { font-size: 14px; }
-  .recipe-card { width: 100%; max-width: 330px; margin: 0 auto; }
+  .about__text p + p { margin-top: -15px; }
+  .recipe-card { width: 100%; max-width: 330px; margin: 0 auto; order: 2; }
   .recipe-card__item { font-size: 4.8vw; }
-  .btn-glow { width: 100%; height: auto; padding: 10px 15px; font-size: 14px; gap: 10px; }
+  .btn-glow { width: 100%; height: auto; padding: 10px 15px; font-size: 14px; gap: 10px; order: 3; }
 
   /* ---------- Stages ---------- */
   .stages { padding: 30px 15px; }
   .stages__top { flex-direction: column; gap: 15px; margin-bottom: 0; }
   .stages__intro { font-size: 14px; line-height: 1.3; }
   .stages__hint { font-size: 14px; text-align: left; }
-  .stages__heading { margin: 30px 0 30px; gap: 0; }
-  .stages__heading img:first-child { width: 58%; max-width: 192px; }
-  .stages__heading img:last-child { width: 100%; max-width: 330px; margin-top: -6%; }
+  .stages__heading { margin: 30px 0 30px; gap: 0; flex-direction: column; align-items: flex-start; }
+  .stages__heading img:first-child { width: 100%; max-width: 330px; }
+  .stages__heading img:last-child { width: 58.1%; max-width: 192px; margin-top: 8px; }
   .stages__grid { flex-direction: column; align-items: stretch; gap: 30px; }
   .stages__list { padding-left: 15px; gap: 20px; }
   .stages__list li,
@@ -1166,7 +1168,6 @@ img { max-width: 100%; display: block; }
   .stages__list li:hover::before {
     left: -15px;
     top: 6px;
-    transform: rotate(90deg);
     border-top-width: 7.5px;
     border-bottom-width: 7.5px;
     border-left-width: 10px;
@@ -1208,6 +1209,8 @@ img { max-width: 100%; display: block; }
   .wheel--m__ring--5 { inset: 1.68% 1.69%; width: 96.63%; height: 96.63%; }
   .wheel--m__ring--1 { inset: 16.84%; width: 66.32%; height: 66.32%; }
   .wheel--m__ring--2 { inset: 17.89%; width: 64.22%; height: 64.22%; }
+  .wheel--m__ring { animation: wheel-spin-cw 22s linear infinite; }
+  .wheel--m__ring--4, .wheel--m__ring--2 { animation-name: wheel-spin-ccw; }
   .wheel--m__glass {
     left: 50%;
     top: 50%;
@@ -1278,7 +1281,8 @@ img { max-width: 100%; display: block; }
 
   /* ---------- Ambassadors ---------- */
   .ambassadors { padding: 30px 15px; gap: 15px; }
-  .ambassadors__heading { height: auto; width: 60%; max-width: 192px; }
+  .ambassadors__heading--d { display: none; }
+  .ambassadors__heading--m { display: block; height: auto; width: 100%; max-width: 330px; }
   .ambassadors__carousel { gap: 15px; }
   .ambassadors__arrow { width: 11px; margin-top: 0; align-self: center; }
   .ambassadors__track { height: 186px; padding-top: 0; gap: 15px; }
@@ -1295,9 +1299,9 @@ img { max-width: 100%; display: block; }
 
   /* ---------- Sponsors ---------- */
   .sponsors { border-radius: 30px 30px 0 0; padding: 30px 15px; gap: 15px; }
-  .sponsors__heading { gap: 11px; }
-  .sponsors__heading img:first-child { width: 34.3%; max-width: 113px; }
-  .sponsors__heading img:last-child { width: 27.5%; max-width: 91px; }
+  .sponsors__heading { flex-direction: column; align-items: flex-start; gap: 9px; }
+  .sponsors__heading img:first-child { width: 30.2%; max-width: 100px; }
+  .sponsors__heading img:last-child { width: 100%; max-width: 330px; }
   .sponsors__row { gap: 15px; flex-wrap: wrap; }
   .sponsors__item { flex: 0 0 calc(50% - 7.5px); }
   .sponsors__row + .sponsors__row { display: none; }
