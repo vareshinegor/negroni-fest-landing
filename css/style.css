@@ -722,6 +722,7 @@ img { max-width: 100%; display: block; }
   object-fit: cover;
   transition: opacity .4s ease;
 }
+.embassies__heading-m { display: none; }
 
 /* ---------- Ambassadors ---------- */
 .ambassadors {
@@ -1254,8 +1255,9 @@ img { max-width: 100%; display: block; }
   .perks__marker { width: 10px; height: 13px; }
 
   /* ---------- Embassies ---------- */
-  .embassies { flex-direction: column; padding: 30px 15px; gap: 15px; }
+  .embassies { flex-direction: column; padding: 30px 15px; gap: 30px; }
   .embassies__vertical { display: none; }
+  .embassies__heading-m { display: block; width: 100%; max-width: 330px; height: auto; }
   .embassies__content { gap: 0; }
   .embassies__row1 {
     height: auto;
