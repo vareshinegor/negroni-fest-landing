@@ -1291,8 +1291,8 @@ img { max-width: 100%; display: block; }
   .ambassadors__track::after {
     content: '';
     position: absolute;
-    top: 0; right: 0;
-    width: 25px; height: 100%;
+    top: 24px; right: 0;
+    width: 25px; height: calc(100% - 24px);
     background: linear-gradient(to left, var(--red), rgba(217, 1, 38, 0));
     pointer-events: none;
   }
