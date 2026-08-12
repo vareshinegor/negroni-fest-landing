@@ -82,7 +82,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     {
       first: 'Давид', last: 'Стеньшин',
       img: 'assets/amb3-david.png', sparkle: true, wide: true,
-      bio: ['Автор книги «Архитектура коктейля»', 'Шеф бармен WRF, совладелец школы Solution'],
+      bio: ['Автор книги «Архитектура коктейля»', 'Шеф бармен WRF', 'Совладелец школы Solution'],
     },
     {
       first: 'Даниил', last: 'Панов',
