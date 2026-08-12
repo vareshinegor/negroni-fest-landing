@@ -169,11 +169,13 @@ img { max-width: 100%; display: block; }
   transform: scale(1.08);
 }
 .topbar__reg > * { position: relative; }
-.topbar__reg .arrow {
-  width: 9px;
-  height: 13px;
+.arrow--tri {
+  display: inline-block;
+  flex: none;
+  width: 15px;
+  height: 20px;
   font-size: 0;
-  background: var(--white);
+  background: currentColor;
   clip-path: polygon(0 0, 100% 50%, 0 100%);
 }
 .topbar__badge {
@@ -318,7 +320,7 @@ img { max-width: 100%; display: block; }
   flex-wrap: nowrap;
   align-items: center;
   gap: 20px;
-  animation: ticker 18s linear infinite;
+  animation: ticker 65s linear infinite;
   font-family: var(--text);
   font-weight: 400;
   font-size: 20px;
@@ -329,6 +331,7 @@ img { max-width: 100%; display: block; }
 .ticker--white { background: var(--white); }
 .ticker--white .ticker__track span { color: var(--black); }
 .ticker--white .ticker__track span:nth-child(even) { background: var(--black); }
+.ticker--slow .ticker__track { animation-duration: 95s; }
 @keyframes ticker {
   from { transform: translateX(0); }
   to { transform: translateX(-50%); }
