@@ -509,12 +509,12 @@ img { max-width: 100%; display: block; }
 }
 .stages__wheel {
   flex: none;
-  width: 340px;
+  width: 440px;
 }
 .wheel {
   position: relative;
-  width: 340px;
-  height: 340px;
+  width: 440px;
+  height: 440px;
   margin: 0 auto;
 }
 .wheel__ring {
@@ -524,16 +524,16 @@ img { max-width: 100%; display: block; }
 }
 .wheel__ring--cw { animation: wheel-spin-cw 22s linear infinite; }
 .wheel__ring--ccw { animation: wheel-spin-ccw 22s linear infinite; }
-.wheel__ring--osyazanie { width: 96%; height: 96%; }
-.wheel__ring--obonianie { width: 95%; height: 95%; }
-.wheel__ring--zrenie    { width: 84%; height: 84%; }
-.wheel__ring--sluh      { width: 47%; height: 47%; }
-.wheel__ring--vkus      { width: 40%; height: 40%; }
+.wheel__ring--osyazanie { width: 97.7%; height: 97.7%; }
+.wheel__ring--obonianie { width: 89%;   height: 89%; }
+.wheel__ring--zrenie    { width: 78.7%; height: 78.7%; }
+.wheel__ring--sluh      { width: 68.8%; height: 68.8%; }
+.wheel__ring--vkus      { width: 58.8%; height: 58.8%; }
 .wheel__glass {
   position: absolute;
-  left: 27%;
-  top: 31%;
-  width: 46%;
+  left: 25%;
+  top: 29%;
+  width: 50%;
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.5));
 }
 @keyframes wheel-spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
