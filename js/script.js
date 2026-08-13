@@ -12,16 +12,10 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 (() => {
   const gate = document.getElementById('agegate');
   if (!gate) return;
-  const STORAGE_KEY = 'negroniAgeConfirmed';
 
-  if (localStorage.getItem(STORAGE_KEY) === '1') {
-    gate.classList.add('is-hidden');
-  } else {
-    document.body.style.overflow = 'hidden';
-  }
+  document.body.style.overflow = 'hidden';
 
   document.getElementById('agegate-yes').addEventListener('click', () => {
-    localStorage.setItem(STORAGE_KEY, '1');
     gate.classList.add('is-hidden');
     document.body.style.overflow = '';
   });
