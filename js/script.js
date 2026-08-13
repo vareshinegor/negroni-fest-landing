@@ -111,9 +111,11 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     },
   ];
 
+  const left2 = document.getElementById('amb-left2');
   const left = document.getElementById('amb-left');
   const center = document.getElementById('amb-center');
   const right = document.getElementById('amb-right');
+  const right2 = document.getElementById('amb-right2');
   const n = ambassadors.length;
   let featured = 1;
 
@@ -134,12 +136,16 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   track.style.willChange = 'transform';
 
   function render(dir) {
+    const prev2 = ambassadors[(featured - 2 + n) % n];
     const prev = ambassadors[(featured - 1 + n) % n];
     const next = ambassadors[(featured + 1) % n];
+    const next2 = ambassadors[(featured + 2) % n];
 
+    fillCard(left2, prev2);
     fillCard(left, prev);
     fillCard(center, ambassadors[featured]);
     fillCard(right, next);
+    fillCard(right2, next2);
 
     if (!dir) return;
 

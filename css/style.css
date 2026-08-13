@@ -573,7 +573,7 @@ img { max-width: 100%; display: block; }
 .perks__box {
   position: absolute;
   left: 62.911vw;
-  top: 11.594vw;
+  top: 5.594vw;
   width: 34.921vw;
   transform: rotate(-9.51deg);
 }
@@ -729,7 +729,7 @@ img { max-width: 100%; display: block; }
 /* ---------- Ambassadors ---------- */
 .ambassadors {
   background: var(--red);
-  padding: 2.778vw 13.889vw 0;
+  padding: 2.778vw 2.778vw 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -782,7 +782,7 @@ img { max-width: 100%; display: block; }
   flex-direction: column;
   transition: opacity .2s ease;
 }
-.amb-card--side { width: 208px; opacity: .6; }
+.amb-card--side { width: 179.5px; opacity: .6; }
 .amb-card--center { width: 391px; }
 .amb-card__name {
   display: flex;
@@ -1301,7 +1301,7 @@ img { max-width: 100%; display: block; }
     background: linear-gradient(to left, var(--red), rgba(217, 1, 38, 0));
     pointer-events: none;
   }
-  #amb-left { display: none; }
+  #amb-left, #amb-left2, #amb-right2 { display: none; }
   .amb-card--side { width: 107px; }
   .amb-card--center { width: 171px; }
   .amb-card--side .amb-card__name { font-size: 9.5px; height: auto; }
