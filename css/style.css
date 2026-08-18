@@ -1166,7 +1166,7 @@ img { max-width: 100%; display: block; }
 .age-bar__text {
   position: absolute;
   left: 0;
-  top: -1.069vw;
+  top: -3.125vw;
   margin: 0;
   font-family: 'Highliner', var(--text);
   font-weight: 300;
