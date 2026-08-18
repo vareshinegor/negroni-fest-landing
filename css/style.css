@@ -599,7 +599,7 @@ img { max-width: 100%; display: block; }
   left: 21%;
   top: 23.25%;
   width: 58%;
-  transform: rotate(-12deg);
+  transform: rotate(-20deg);
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.5));
 }
 @keyframes wheel-spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -1142,8 +1142,8 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: center;
   gap: 20px;
-  min-height: 44px;
-  padding: 10px 14.028vw;
+  min-height: 60px;
+  padding: 12px 14.028vw;
   background: rgba(255, 255, 255, 0.85);
   border-top: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
@@ -1160,8 +1160,8 @@ img { max-width: 100%; display: block; }
 .age-bar__text {
   margin: 0;
   font-family: var(--text);
-  font-weight: 600;
-  font-size: min(14px, .972vw);
+  font-weight: 700;
+  font-size: min(28px, 1.944vw);
   line-height: 1.2;
   color: var(--black);
   opacity: .55;
@@ -1171,9 +1171,9 @@ img { max-width: 100%; display: block; }
 }
 .age-bar__badge {
   flex: none;
-  width: 28px;
-  height: 28px;
-  border: 2px solid var(--black);
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--black);
   border-radius: 50%;
   box-sizing: border-box;
   display: flex;
@@ -1181,7 +1181,7 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   opacity: .55;
 }
-.age-bar__badge img { width: 15px; height: auto; }
+.age-bar__badge img { width: 21px; height: auto; }
 
 
 /* =========================================================
