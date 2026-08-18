@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Highliner';
+  src: url('../assets/fonts/Highliner-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --red: #D90126;
   --red-dark: #B4141A;
@@ -1160,7 +1168,7 @@ img { max-width: 100%; display: block; }
   left: 0;
   top: -1.458vw;
   margin: 0;
-  font-family: var(--text);
+  font-family: 'Highliner', var(--text);
   font-weight: 300;
   font-size: 7.767vw;
   line-height: normal;
@@ -1169,8 +1177,6 @@ img { max-width: 100%; display: block; }
   mix-blend-mode: exclusion;
   text-transform: uppercase;
   white-space: nowrap;
-  transform: scaleX(.269);
-  transform-origin: left top;
 }
 .age-bar__badge {
   flex: none;
