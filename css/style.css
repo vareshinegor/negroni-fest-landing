@@ -1048,8 +1048,6 @@ img { max-width: 100%; display: block; }
 }
 .footer__tg span .footer__tg-accent {
   color: #3e70d3;
-  position: relative;
-  top: -2px;
 }
 .footer__tg-icon { width: 29px; height: 25.58px; flex: none; }
 .footer__links {
