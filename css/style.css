@@ -596,8 +596,8 @@ img { max-width: 100%; display: block; }
 .wheel__ring--sluh      { width: 59.46%; height: 59.46%; }
 .wheel__glass {
   position: absolute;
-  left: 17.685%;
-  top: 20.37%;
+  left: 21%;
+  top: 23.25%;
   width: 58%;
   transform: rotate(-12deg);
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.5));
@@ -1140,49 +1140,48 @@ img { max-width: 100%; display: block; }
   z-index: 40;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
-  height: 5.347vw;
-  padding: 0 14.028vw;
-  background: rgba(255, 255, 255, 0.7);
+  min-height: 44px;
+  padding: 10px 14.028vw;
+  background: rgba(255, 255, 255, 0.85);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
   overflow: hidden;
   pointer-events: none;
 }
 .age-bar__text-wrap {
   flex: 1;
   min-width: 0;
-  height: 3.958vw;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 .age-bar__text {
-  position: absolute;
-  left: 0;
-  top: -1.458vw;
   margin: 0;
   font-family: var(--text);
-  font-weight: 300;
-  font-size: 7.767vw;
-  line-height: normal;
-  color: #fff;
-  opacity: .2;
-  mix-blend-mode: exclusion;
+  font-weight: 600;
+  font-size: min(14px, .972vw);
+  line-height: 1.2;
+  color: var(--black);
+  opacity: .55;
   text-transform: uppercase;
+  text-align: center;
   white-space: nowrap;
 }
 .age-bar__badge {
   flex: none;
-  width: 56px;
-  height: 56px;
-  border: 6px solid #fff;
+  width: 28px;
+  height: 28px;
+  border: 2px solid var(--black);
   border-radius: 50%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
-  mix-blend-mode: exclusion;
-  opacity: .2;
+  opacity: .55;
 }
-.age-bar__badge img { width: 30px; height: auto; }
+.age-bar__badge img { width: 15px; height: auto; }
 
 
 /* =========================================================
@@ -1470,9 +1469,8 @@ img { max-width: 100%; display: block; }
   .closing { padding: 30px 15px; }
 
   /* ---------- Age disclaimer bar ---------- */
-  .age-bar { height: 44px; padding: 0 15px; gap: 10px; }
-  .age-bar__text-wrap { height: 30px; }
-  .age-bar__text { top: -8px; font-size: 42px; }
-  .age-bar__badge { width: 32px; height: 32px; border-width: 3px; }
-  .age-bar__badge img { width: 17px; }
+  .age-bar { min-height: 36px; padding: 8px 12px; gap: 8px; }
+  .age-bar__text { font-size: 9px; white-space: normal; text-align: center; }
+  .age-bar__badge { width: 22px; height: 22px; border-width: 1.5px; }
+  .age-bar__badge img { width: 12px; }
 }
