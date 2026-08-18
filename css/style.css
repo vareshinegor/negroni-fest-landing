@@ -598,7 +598,8 @@ img { max-width: 100%; display: block; }
   position: absolute;
   left: 17.685%;
   top: 20.37%;
-  width: 64.63%;
+  width: 58%;
+  transform: rotate(-12deg);
   filter: drop-shadow(0 8px 16px rgba(0,0,0,.5));
 }
 @keyframes wheel-spin-cw { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
@@ -1130,6 +1131,59 @@ img { max-width: 100%; display: block; }
 }
 .closing__logo { width: 100%; display: block; }
 
+/* ---------- Age disclaimer bar (always pinned to viewport bottom) ---------- */
+.age-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 5.347vw;
+  padding: 0 14.028vw;
+  background: rgba(255, 255, 255, 0.7);
+  overflow: hidden;
+  pointer-events: none;
+}
+.age-bar__text-wrap {
+  flex: 1;
+  min-width: 0;
+  height: 3.958vw;
+  position: relative;
+  overflow: hidden;
+}
+.age-bar__text {
+  position: absolute;
+  left: 0;
+  top: -1.458vw;
+  margin: 0;
+  font-family: var(--text);
+  font-weight: 300;
+  font-size: 7.767vw;
+  line-height: normal;
+  color: #fff;
+  opacity: .2;
+  mix-blend-mode: exclusion;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.age-bar__badge {
+  flex: none;
+  width: 56px;
+  height: 56px;
+  border: 6px solid #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: exclusion;
+  opacity: .2;
+}
+.age-bar__badge img { width: 30px; height: auto; }
+
 
 /* =========================================================
    MOBILE (<=767px) — matches Figma node 192:5799 "NEGRONI - 360"
@@ -1414,4 +1468,11 @@ img { max-width: 100%; display: block; }
 
   /* ---------- Closing banner ---------- */
   .closing { padding: 30px 15px; }
+
+  /* ---------- Age disclaimer bar ---------- */
+  .age-bar { height: 44px; padding: 0 15px; gap: 10px; }
+  .age-bar__text-wrap { height: 30px; }
+  .age-bar__text { top: -8px; font-size: 42px; }
+  .age-bar__badge { width: 32px; height: 32px; border-width: 3px; }
+  .age-bar__badge img { width: 17px; }
 }
