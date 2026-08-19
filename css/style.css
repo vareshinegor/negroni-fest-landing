@@ -1222,7 +1222,7 @@ img { max-width: 100%; display: block; }
   .hero__stage { min-height: 0; padding: 0 15px 30px; box-sizing: border-box; }
   .topbar__badge {
     position: static;
-    padding: 0;
+    padding: 0 15px;
     width: 60%;
     font-size: 10px;
     text-align: left;
@@ -1249,7 +1249,7 @@ img { max-width: 100%; display: block; }
     gap: 30px;
     align-items: stretch;
   }
-  .dates__bottle { left: 275px; top: -934px; width: 270px; max-width: none; }
+  .dates__bottle { left: 194px; top: -934px; width: 362px; max-width: none; }
   .dates__title { flex-direction: column; gap: 0; align-items: flex-start; width: 274px; max-width: 100%; }
   .dates__title img:first-child { width: 44.9%; max-width: 123px; }
   .dates__title img:last-child { width: 100%; max-width: 274px; margin-top: 7px; }
