@@ -140,6 +140,7 @@ img { max-width: 100%; display: block; }
   font-size: 24px;
   text-transform: uppercase;
   text-decoration: none;
+  opacity: .7;
   box-shadow: 0 0 1px var(--red), 0 0 2px var(--red), 0 0 3px var(--red), 0 0 5px var(--red), 0 0 10px var(--red), 0 0 25px rgba(255,255,255,.25), 0 0 15px rgba(255,255,255,.5), 0 0 5px #fff;
 }
 
@@ -170,6 +171,7 @@ img { max-width: 100%; display: block; }
   padding: 10px 20px;
   height: 44px;
   position: relative;
+  opacity: .7;
   transition: transform .25s ease;
   transform-origin: center;
 }
@@ -258,6 +260,7 @@ img { max-width: 100%; display: block; }
 }
 .hero__text strong { font-weight: 700; }
 .hero__note { font-size: 0.7em; vertical-align: super; }
+.hero__bottle-m { display: none; }
 
 /* ---------- Dates ---------- */
 .dates {
@@ -276,10 +279,13 @@ img { max-width: 100%; display: block; }
   position: absolute;
   left: 78.681vw;
   top: -100.069vw;
-  width: 45.908vw;
-  max-width: 661px;
+  width: 51.22vw;
+  max-width: 738px;
   z-index: 2;
   pointer-events: none;
+}
+@media (min-width: 1441px) {
+  .dates__bottle { left: 1133px; top: -1441px; }
 }
 .dates__title {
   display: flex;
@@ -444,13 +450,14 @@ img { max-width: 100%; display: block; }
   color: var(--white);
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  padding: 10px 20px;
-  height: 44px;
+  padding: 16px 32px;
+  height: 60px;
   flex: none;
+  opacity: .7;
   transition: transform .25s ease;
   transform-origin: center;
 }
@@ -584,6 +591,8 @@ img { max-width: 100%; display: block; }
   width: min(440px, 30.556vw);
 }
 .stages__wheel--m { display: none; }
+.stages__wheel--m-wrap { display: contents; }
+.stages__hint--mobile { display: none; }
 .wheel {
   position: relative;
   width: min(440px, 30.556vw);
@@ -1240,7 +1249,18 @@ img { max-width: 100%; display: block; }
     min-width: 0;
     font-size: 12px;
     margin-top: 15px;
+    text-align: center;
   }
+  .hero__bottle-m {
+    display: block;
+    position: absolute;
+    left: 205px;
+    top: -130px;
+    width: 468px;
+    max-width: none;
+    pointer-events: none;
+  }
+  .hero { padding-bottom: 30px; }
 
   /* ---------- Dates ---------- */
   .dates {
@@ -1248,9 +1268,10 @@ img { max-width: 100%; display: block; }
     border-radius: 30px 30px 0 0;
     gap: 30px;
     align-items: stretch;
-    z-index: 0;
+    margin-top: -30px;
+    position: relative;
   }
-  .dates__bottle { left: 205px; top: -660px; width: 300px; max-width: none; z-index: -1; }
+  .dates__bottle { display: none; }
   .dates__title { flex-direction: column; gap: 0; align-items: flex-start; width: 274px; max-width: 100%; }
   .dates__title img:first-child { width: 44.9%; max-width: 123px; }
   .dates__title img:last-child { width: 100%; max-width: 274px; margin-top: 7px; }
@@ -1276,7 +1297,7 @@ img { max-width: 100%; display: block; }
     gap: 30px;
   }
   .about__text { display: contents; }
-  .about__text p { font-size: 14px; order: 1; }
+  .about__text p { font-size: 14px; order: 1; text-align: center; }
   .about__text p:first-child { font-size: 14px; }
   .about__text p + p { margin-top: -15px; }
   .recipe-card { width: 100%; max-width: 330px; margin: 0 auto; order: 2; }
@@ -1287,21 +1308,39 @@ img { max-width: 100%; display: block; }
   .stages__top { flex-direction: column; align-items: stretch; gap: 15px; margin-bottom: 30px; }
   .stages__intro { font-size: 14px; line-height: 1.3; }
   .stages__subrow { flex-direction: column; align-items: stretch; gap: 15px; }
-  .stages__reg { align-self: flex-start; height: 38px; font-size: 14px; padding: 0 16px; gap: 12px; }
+  .stages__reg { align-self: stretch; justify-content: center; width: 100%; height: 44px; font-size: 14px; padding: 0 16px; gap: 12px; }
   .stages__reg .arrow--tri { width: 6px; height: 8px; }
-  .stages__hint {
-    font-size: 14px;
-    text-align: left;
-    margin: 0;
-    flex: none;
-    width: 100%;
-    max-width: none;
-    padding-right: 0;
-  }
+  .stages__hint--desktop { display: none; }
   .stages__heading { width: 100%; margin: 0; gap: 0; flex-direction: column; align-items: flex-start; }
   .stages__heading img:first-child { width: 100%; max-width: 330px; }
   .stages__heading img:last-child { width: 58.1%; max-width: 192px; margin-top: 8px; }
   .stages__grid { flex-direction: column; align-items: stretch; gap: 30px; }
+  .stages__wheel--m-wrap { display: flex; flex-direction: column; align-items: stretch; gap: 15px; }
+  .stages__hint--mobile {
+    display: block;
+    position: relative;
+    font-family: var(--text);
+    font-size: 14px;
+    line-height: 1.3;
+    color: var(--white);
+    text-align: center;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    flex: none;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .stages__hint-arrow--mobile {
+    display: block;
+    position: absolute;
+    left: 63%;
+    right: auto;
+    top: calc(100% + 10px);
+    bottom: auto;
+    width: 30px;
+    max-width: none;
+  }
   .stages__list { padding-left: 15px; gap: 20px; }
   .stages__list li {
     display: flex;
@@ -1363,7 +1402,7 @@ img { max-width: 100%; display: block; }
 
   /* ---------- Perks ---------- */
   .perks {
-    height: 754px;
+    height: 610px;
     border-radius: 30px 30px 0 0;
     padding: 0;
     box-sizing: border-box;
@@ -1382,10 +1421,8 @@ img { max-width: 100%; display: block; }
     min-width: 0;
     gap: 10px;
   }
-  .perks__item--1 { left: 170px; top: 685px; width: 175px; justify-content: flex-start; }
-  .perks__item--2 { left: 15px; top: 343px; width: 190px; justify-content: flex-start; }
-  .perks__item--3 { left: 192px; top: 451px; width: 153px; justify-content: flex-start; }
-  .perks__item--4 { left: 15px; top: 545px; width: 211px; justify-content: flex-start; }
+  .perks__item--1 { left: 170px; top: 500px; width: 175px; justify-content: flex-start; }
+  .perks__item--4 { left: 15px; top: 385px; width: 211px; justify-content: flex-start; }
   .perks__marker { order: -1; }
   .perks__marker--right { background-image: url('../assets/perks-marker-right.svg'); }
   .perks__item--1 .perks__text,
