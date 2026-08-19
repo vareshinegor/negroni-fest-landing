@@ -277,15 +277,15 @@ img { max-width: 100%; display: block; }
 }
 .dates__bottle {
   position: absolute;
-  left: 78.681vw;
-  top: -100.069vw;
-  width: 51.22vw;
-  max-width: 738px;
+  left: 77.986vw;
+  top: -91.67vw;
+  width: 52.847vw;
+  max-width: 761px;
   z-index: 2;
   pointer-events: none;
 }
 @media (min-width: 1441px) {
-  .dates__bottle { left: 1133px; top: -1441px; }
+  .dates__bottle { left: 1123px; top: -1290px; }
 }
 .dates__title {
   display: flex;
@@ -1254,9 +1254,9 @@ img { max-width: 100%; display: block; }
   .hero__bottle-m {
     display: block;
     position: absolute;
-    left: 205px;
-    top: -130px;
-    width: 468px;
+    left: 195px;
+    top: -240px;
+    width: 347px;
     max-width: none;
     pointer-events: none;
   }
