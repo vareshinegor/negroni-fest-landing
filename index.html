@@ -6,7 +6,7 @@
 <title>NEGRONI FEST</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700;900&family=Roboto+Condensed:wght@400;500;600;700&family=Inter+Tight:wght@400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=143">
+<link rel="stylesheet" href="css/style.css?v=150">
 </head>
 <body>
 
@@ -24,9 +24,19 @@
 
 <header class="topbar">
   <a href="#registration" class="topbar__reg">РЕГИСТРАЦИЯ <span class="arrow arrow--tri">▸</span></a>
-  <button class="topbar__menu" aria-label="Меню">
-    <span></span><span></span>
-  </button>
+  <div class="topbar__menu-wrap">
+    <button class="topbar__menu" aria-label="Меню">
+      <span></span><span></span>
+    </button>
+    <nav class="topbar__dropdown">
+      <a href="#about">Состав</a>
+      <a href="#stages">Ключевые даты</a>
+      <a href="#perks">Что ты получишь</a>
+      <a href="#embassies">Посольства</a>
+      <a href="#ambassadors">Послы Negroni Fest</a>
+      <a href="#sponsors">При поддержке</a>
+    </nav>
+  </div>
 </header>
 
 <section class="hero">
@@ -96,7 +106,7 @@
   </div>
 </div>
 
-<section class="about">
+<section class="about" id="about">
   <div class="about__text">
     <p>
       Коктейль Негрони — многогранный шедевр простоты и изысканности, который стал
@@ -166,7 +176,7 @@
   </div>
 </div>
 
-<section class="stages">
+<section class="stages" id="stages">
   <div class="stages__top">
     <p class="stages__intro">
       Теперь настало твое время <strong>создать</strong> свое уникальное <strong>меню</strong> с твистами и получить
@@ -275,7 +285,7 @@
   </div>
 </section>
 
-<section class="perks">
+<section class="perks" id="perks">
   <img class="perks__heading" src="assets/perks-heading-new.png" alt="Что ты получишь">
   <img class="perks__box" src="assets/perks-giftbox-v3.png" alt="Подарочный бокс">
 
@@ -337,7 +347,7 @@
   </div>
 </div>
 
-<section class="embassies">
+<section class="embassies" id="embassies">
   <span class="embassies__corner-note embassies__corner-note--top"><span class="embassies__corner-note-inner">(2)</span></span>
   <span class="embassies__corner-note embassies__corner-note--bottom"><span class="embassies__corner-note-inner embassies__corner-note-inner--right">(2)</span></span>
   <span class="embassies__vertical embassies__vertical--left"><img src="assets/emb-vertical-left.png" alt="Посольства"></span>
@@ -362,7 +372,7 @@
   <span class="embassies__vertical embassies__vertical--right"><img src="assets/emb-vertical-left.png" alt="Посольства"></span>
 </section>
 
-<section class="ambassadors">
+<section class="ambassadors" id="ambassadors">
   <div class="ambassadors__head">
     <span class="ambassadors__heading-box">
       <img class="ambassadors__heading ambassadors__heading--d" src="assets/ambassadors-heading.png" alt="Послы Негрони Фест">
@@ -384,7 +394,7 @@
   </div>
 </section>
 
-<section class="sponsors">
+<section class="sponsors" id="sponsors">
   <div class="sponsors__heading">
     <img src="assets/sponsors-heading2.svg" alt="ПРИ">
     <img src="assets/sponsors-heading3.svg" alt="ПОДДЕРЖКЕ">
@@ -396,10 +406,15 @@
     <div class="sponsors__item"><img src="assets/sponsor-tyzhbarmen.png" alt="Ты ж Бармен"></div>
   </div>
   <div class="sponsors__row">
-    <div class="sponsors__item"><img src="assets/sponsor-longtongue.png" alt=""></div>
-    <div class="sponsors__item sponsors__item--tall"><img src="assets/sponsor-barboss.png" alt=""></div>
-    <div class="sponsors__item"><img src="assets/sponsor-skuchaut.png" alt=""></div>
-    <div class="sponsors__item"><img src="assets/sponsor-tyzhbarmen.png" alt=""></div>
+    <div class="sponsors__item"><img src="assets/sponsor-solutionschool.png" alt="Solution School"></div>
+    <div class="sponsors__item"><img src="assets/sponsor-pobaram.png" alt="Pora po baram"></div>
+    <div class="sponsors__item"><img src="assets/sponsor-artender.png" alt="Артендер"></div>
+    <div class="sponsors__item"><img src="assets/sponsor-gradus.png" alt="Градус"></div>
+  </div>
+  <div class="sponsors__row">
+    <div class="sponsors__item"><img src="assets/sponsor-mixology.png" alt="The Mixology"></div>
+    <div class="sponsors__item"><img src="assets/sponsor-nba.png" alt="НБА"></div>
+    <div class="sponsors__item"><img src="assets/sponsor-barmenymoskvy.png" alt="Бармены Москвы"></div>
   </div>
 </section>
 
