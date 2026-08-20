@@ -7,8 +7,8 @@
 }
 
 :root {
-  --vw: min(1vw, 14.4px);
-  --edge-extra: max(0px, (100vw - 1440px) / 2);
+  --vw: min(1vw, 21px);
+  --edge-extra: max(0px, (100vw - 2100px) / 2);
   --red: #D90126;
   --red-dark: #B4141A;
   --black: #000000;
@@ -287,7 +287,7 @@ img { max-width: 100%; display: block; }
   left: calc(13.889 * var(--vw));
   top: calc(8.819 * var(--vw));
   width: calc(73.125 * var(--vw));
-  max-width: 1053px;
+  max-width: 1536px;
   z-index: 1;
 }
 .hero__text {
@@ -324,7 +324,7 @@ img { max-width: 100%; display: block; }
   left: calc(77.986 * var(--vw));
   top: calc(-91.67 * var(--vw));
   width: calc(52.194 * var(--vw));
-  max-width: 752px;
+  max-width: 1096px;
   z-index: 2;
   pointer-events: none;
 }
@@ -333,8 +333,8 @@ img { max-width: 100%; display: block; }
   align-items: flex-start;
   gap: calc(3 * var(--vw));
 }
-.dates__title img:first-child { width: calc(21.46 * var(--vw)); max-width: 309px; }
-.dates__title img:last-child { width: calc(47.77 * var(--vw)); max-width: 688px; }
+.dates__title img:first-child { width: calc(21.46 * var(--vw)); max-width: 451px; }
+.dates__title img:last-child { width: calc(47.77 * var(--vw)); max-width: 1003px; }
 .dates__link {
   display: inline-flex;
   flex-direction: column;
@@ -431,7 +431,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   flex: none;
   width: calc(26.042 * var(--vw));
-  max-width: 375px;
+  max-width: 547px;
 }
 .recipe-card img { width: 100%; display: block; }
 .recipe-card__item {
@@ -499,7 +499,7 @@ img { max-width: 100%; display: block; }
   padding: 10px 20px;
   height: 44px;
   width: calc(17.569 * var(--vw));
-  max-width: 253px;
+  max-width: 369px;
   flex: none;
   position: absolute;
   left: calc(25px + max(220px, min(382px, calc(26.528 * var(--vw)))) + min(162px, calc(11.25 * var(--vw))));
@@ -519,7 +519,7 @@ img { max-width: 100%; display: block; }
   white-space: normal;
   flex: none;
   width: calc(25.486 * var(--vw));
-  max-width: 367px;
+  max-width: 535px;
   padding-right: 73px;
   box-sizing: border-box;
   position: relative;
@@ -540,8 +540,8 @@ img { max-width: 100%; display: block; }
   flex: none;
   width: calc(37.292 * var(--vw));
 }
-.stages__heading img:first-child { width: calc(21.042 * var(--vw)); max-width: 303px; }
-.stages__heading img:last-child { width: calc(12.472 * var(--vw)); max-width: 180px; margin-top: 10px; }
+.stages__heading img:first-child { width: calc(21.042 * var(--vw)); max-width: 442px; }
+.stages__heading img:last-child { width: calc(12.472 * var(--vw)); max-width: 262px; margin-top: 10px; }
 .stages__grid {
   display: flex;
   align-items: center;
@@ -688,7 +688,7 @@ img { max-width: 100%; display: block; }
   left: calc(52.153 * var(--vw));
   top: calc(-5.86 * var(--vw));
   width: calc(53.056 * var(--vw));
-  max-width: 764px;
+  max-width: 1114px;
 }
 .perks__item {
   position: absolute;
@@ -1021,8 +1021,8 @@ img { max-width: 100%; display: block; }
   align-items: flex-start;
   gap: 20px;
 }
-.sponsors__heading img:first-child { width: calc(10.89 * var(--vw)); max-width: 157px; }
-.sponsors__heading img:last-child { width: calc(36.05 * var(--vw)); max-width: 520px; }
+.sponsors__heading img:first-child { width: calc(10.89 * var(--vw)); max-width: 229px; }
+.sponsors__heading img:last-child { width: calc(36.05 * var(--vw)); max-width: 757px; }
 .sponsors__row {
   display: flex;
   align-items: flex-start;
@@ -1211,9 +1211,9 @@ img { max-width: 100%; display: block; }
 .age-bar__text-wrap {
   flex: none;
   width: calc(63.403 * var(--vw));
-  max-width: 913px;
+  max-width: 1331px;
   height: calc(3.958 * var(--vw));
-  max-height: 57px;
+  max-height: 83px;
   position: relative;
   overflow: hidden;
 }
@@ -1236,8 +1236,8 @@ img { max-width: 100%; display: block; }
   flex: none;
   width: calc(3.889 * var(--vw));
   height: calc(3.889 * var(--vw));
-  max-width: 56px;
-  max-height: 56px;
+  max-width: 82px;
+  max-height: 82px;
   border: 6px solid #fff;
   border-radius: 50%;
   box-sizing: border-box;
