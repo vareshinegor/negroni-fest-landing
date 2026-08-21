@@ -1501,7 +1501,7 @@ img { max-width: 100%; display: block; }
   }
   .embassies__city { font-size: 14px; }
   .embassies__bar { font-size: 24px; }
-  .embassies__photo-wrap { width: 100%; height: 279px; margin-bottom: -1px; }
+  .embassies__photo-wrap { width: 100%; aspect-ratio: 330 / 279; height: auto; margin-bottom: -1px; }
 
   /* ---------- Ambassadors ---------- */
   .ambassadors { padding: 30px 15px; gap: 15px; }
@@ -1564,4 +1564,8 @@ img { max-width: 100%; display: block; }
   .age-bar { padding: 8px 15px; gap: 10px; }
   .age-bar__text-wrap { width: 63.403vw; height: 3.958vw; max-width: none; max-height: none; }
   .age-bar__badge { width: 22px; height: 22px; max-width: none; max-height: none; border-width: 2px; }
+}
+
+@media (min-width: 379px) and (max-width: 452px) {
+  #embassies-photo[src*="emb-moscow"] { object-position: center calc(20% + 7px) !important; }
 }
